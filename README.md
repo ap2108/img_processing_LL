@@ -186,7 +186,11 @@ make TEST=4
 ```
 
 ----------
+# Makefile Flow
 
+The `run` target performs:
+
+```bash
 python3 png2hex.py $(KERNEL_SIZE)
 iverilog -o sim rtl/<design>.v tb/tb_<design>.v
 vvp sim
